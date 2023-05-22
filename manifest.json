@@ -1,0 +1,27 @@
+{
+    "name": "L4D2 Game Maps Extension",
+    "version": "1.0.1",
+    "description": "Checks if a map is in a list and if it is marks it as played so you would know.",
+    "manifest_version": 3,
+    "author": "Zeptosec",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Game maps played marker"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://www.gamemaps.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "images/logo16.png",
+        "32": "images/logo32.png",
+        "64": "images/logo64.png",
+        "128": "images/logo128.png"
+    }
+}
